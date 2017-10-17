@@ -1,0 +1,23 @@
+PODS:
+  - Differentiator (2.0.1)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxDataSources (2.0.1):
+    - Differentiator (~> 2.0)
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.6.1)
+
+DEPENDENCIES:
+  - RxCocoa
+  - RxDataSources
+
+SPEC CHECKSUMS:
+  Differentiator: 8555f40f5df08beb9bcf225724af295b90e738cb
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: 93c805010d4f5970e5204829a182bcdceab5adb5
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+
+PODFILE CHECKSUM: 3565a6071cdb36af7ed665184c0d643f8c683691
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fq7-BB-oyX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="GYc-H0-WWb">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Fq7-BB-oyX" customClass="DetailViewController" customModule="SwiftMVVMRepositoryPatternSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dNA-FC-uM3"/>
+                        <viewControllerLayoutGuide type="bottom" id="9FT-xe-m6U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S5h-Vd-sa6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo5-V2-Bgp">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-Nj-qAB">
+                                <rect key="frame" x="164.5" y="389" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yo5-V2-Bgp" firstAttribute="centerY" secondItem="S5h-Vd-sa6" secondAttribute="centerY" id="30T-vU-FLy"/>
+                            <constraint firstItem="aWc-Nj-qAB" firstAttribute="centerX" secondItem="S5h-Vd-sa6" secondAttribute="centerX" id="Y98-QR-LY3"/>
+                            <constraint firstItem="yo5-V2-Bgp" firstAttribute="centerX" secondItem="S5h-Vd-sa6" secondAttribute="centerX" id="lD8-x5-ZVf"/>
+                            <constraint firstItem="aWc-Nj-qAB" firstAttribute="top" secondItem="yo5-V2-Bgp" secondAttribute="bottom" constant="45" id="rDW-2I-ZBd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="followButton" destination="aWc-Nj-qAB" id="uSX-gF-854"/>
+                        <outlet property="nameLabel" destination="yo5-V2-Bgp" id="IP2-TG-X2K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8q-yP-hQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="90"/>
+        </scene>
+    </scenes>
+</document>
